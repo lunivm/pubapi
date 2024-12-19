@@ -1,7 +1,7 @@
 {
   "name": "main-api",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "main-api/src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/main-api/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -38,7 +38,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "main-api/jest.config.ts"
+        "jestConfig": "apps/main-api/jest.config.ts"
       }
     }
   }

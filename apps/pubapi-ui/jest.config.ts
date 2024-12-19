@@ -1,8 +1,8 @@
 export default {
-  displayName: 'pubapi',
+  displayName: 'pubapi-ui',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/pubapi',
+  coverageDirectory: '../../coverage/apps/pubapi-ui',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

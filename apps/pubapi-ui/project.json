@@ -1,27 +1,27 @@
 {
-  "name": "pubapi",
+  "name": "pubapi-ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/pubapi/src",
+  "sourceRoot": "apps/pubapi-ui/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/pubapi",
-        "index": "apps/pubapi/src/index.html",
-        "browser": "apps/pubapi/src/main.ts",
+        "outputPath": "dist/apps/pubapi-ui",
+        "index": "apps/pubapi-ui/src/index.html",
+        "browser": "apps/pubapi-ui/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/pubapi/tsconfig.app.json",
+        "tsConfig": "apps/pubapi-ui/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/pubapi/public"
+            "input": "apps/pubapi-ui/public"
           }
         ],
-        "styles": ["apps/pubapi/src/styles.css"],
+        "styles": ["apps/pubapi-ui/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -52,10 +52,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "pubapi:build:production"
+          "buildTarget": "pubapi-ui:build:production"
         },
         "development": {
-          "buildTarget": "pubapi:build:development"
+          "buildTarget": "pubapi-ui:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "pubapi:build"
+        "buildTarget": "pubapi-ui:build"
       }
     },
     "lint": {
@@ -73,15 +73,15 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/pubapi/jest.config.ts"
+        "jestConfig": "apps/pubapi-ui/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "pubapi:build",
+        "buildTarget": "pubapi-ui:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/pubapi/browser",
+        "staticFilePath": "dist/apps/pubapi-ui/browser",
         "spa": true
       }
     }
