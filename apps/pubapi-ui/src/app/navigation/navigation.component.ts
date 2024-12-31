@@ -8,6 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { TypeaheadComponent } from '../shared/components/typeahead/typeahead.component';
 
 @Component({
   selector: 'app-navigation',
@@ -21,6 +22,7 @@ import { map, shareReplay } from 'rxjs/operators';
     MatListModule,
     MatIconModule,
     AsyncPipe,
+    TypeaheadComponent,
   ]
 })
 export class NavigationComponent {

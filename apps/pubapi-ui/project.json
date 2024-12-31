@@ -2,7 +2,7 @@
   "name": "pubapi-ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "pbp",
   "sourceRoot": "apps/pubapi-ui/src",
   "tags": [],
   "targets": {
