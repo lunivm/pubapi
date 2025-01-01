@@ -4,6 +4,10 @@ import { faker } from '@faker-js/faker';
 const seed = 13
 const collectionSize = 1000
 
+interface Song {
+  Label: string;
+}
+
 @Injectable()
 export class AppService {
   private collection = [];
@@ -13,7 +17,7 @@ export class AppService {
     this.setCollection()
   }
 
-  getData(): {}[] {
+  getData(): Song[] {
     return this.collection;
   }
 

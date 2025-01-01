@@ -8,10 +8,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { TypeaheadComponent } from '../shared/components/typeahead/typeahead.component';
+import { MainSearchComponent } from './main-search/main-search.component';
 
 @Component({
-  selector: 'app-navigation',
+  selector: 'pbp-navigation',
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css',
   standalone: true,
@@ -22,7 +22,7 @@ import { TypeaheadComponent } from '../shared/components/typeahead/typeahead.com
     MatListModule,
     MatIconModule,
     AsyncPipe,
-    TypeaheadComponent,
+    MainSearchComponent
   ]
 })
 export class NavigationComponent {

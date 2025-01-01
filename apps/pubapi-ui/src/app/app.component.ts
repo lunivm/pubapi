@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 @Component({
@@ -8,7 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     NavigationComponent,
     RouterModule
   ],
-  selector: 'app-root',
+  selector: 'pbp-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
