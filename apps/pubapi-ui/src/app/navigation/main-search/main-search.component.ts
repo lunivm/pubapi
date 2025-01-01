@@ -10,5 +10,6 @@ import { TypeaheadComponent } from '../../shared/components/typeahead/typeahead.
   styleUrl: './main-search.component.css'
 })
 export class MainSearchComponent {
-
+  typeaheadValueChanged(query: string) {
+  }
 }
