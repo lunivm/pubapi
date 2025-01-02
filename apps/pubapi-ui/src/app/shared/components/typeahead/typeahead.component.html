@@ -1,7 +1,7 @@
 <mat-form-field class="example-form-field">
   <mat-label>Search</mat-label>
-  <input matInput type="text" [ngModel]="value" (ngModelChange)="changeValue($event)">
-  @if (value) {
+  <input matInput type="text" [ngModel]="value()" (ngModelChange)="changeValue($event)">
+  @if (value()) {
     <button matSuffix mat-icon-button aria-label="Clear" (click)="changeValue('')">
       <mat-icon>close</mat-icon>
     </button>

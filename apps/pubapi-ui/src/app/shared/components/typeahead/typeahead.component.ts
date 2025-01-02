@@ -1,4 +1,4 @@
-import { Component, output } from '@angular/core';
+import { Component, output, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatFormField } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
@@ -21,10 +21,10 @@ import { MatIconButton } from '@angular/material/button';
 })
 export class TypeaheadComponent {
   valueChanged = output<string>();
-  value: string = '';
+  value = signal('');
 
   changeValue(value: string) {
-    this.value = value;
+    this.value.set(value);
     this.valueChanged.emit(value);
   }
 }
